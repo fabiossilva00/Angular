@@ -66,6 +66,20 @@ export class HeroService {
       )
   }
 
+  searchHeroes(term: string): Observable<HeroType[]> {
+    if (!term.trim()) {
+      return of([])
+    }
+    return this.http.get<HeroType[]>(`${this.heroesUrl}/?name=${term}`)
+      .pipe(
+        tap(x => x.length ?
+            this.log(`Found Heroes matching with "${term}"`) :
+            this.log(`No Heroes matching with "${term}"`)
+        ),
+        catchError(this.handleError<HeroType[]>('searchHeroes', []))
+      )
+  }
+
   /**
    * Handle Http operation failed
    * @param operation - name of the operation thar failed
