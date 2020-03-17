@@ -1,0 +1,20 @@
+<p>class-style works!</p>
+<section>
+  <article>
+    <div>
+      Selecione uma classe:
+      <select #classe (change)="0">
+        <option value="alert-sucess">Sucesso</option>
+        <option value="alert-info">Info</option>
+        <option value="alert-warning">Alerta</option>
+        <option value="alert-danger">Erro</option>
+      </select>
+      <br><br>
+
+      <div>{{ classe.value }}</div>
+
+    </div>
+  </article>
+</section>
+<input #inputText (input)="0" />
+<label [style.display]="funfun(inputText.value)">{{inputText.value}}</label>

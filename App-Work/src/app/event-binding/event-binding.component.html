@@ -1,0 +1,25 @@
+<p>event-binding works!</p>
+<section>
+  <article>
+    <div>
+      <button (click)="clicavel()"
+      >
+        Clicável
+      </button>
+      <br><br>
+      <input #valueInput
+        type="number"
+        (keyup)="onKeyUp(valueInput.value)"
+
+      />
+      <label>{{labelString}}</label>
+      <br><br>
+      <span
+      (mouseover)="onMouseOver()"
+      (mouseout)="onMouseOver()"
+      [class.highlith]="mouseOuvido">
+        Mouse Over Me
+      </span>
+    </div>
+  </article>
+</section>

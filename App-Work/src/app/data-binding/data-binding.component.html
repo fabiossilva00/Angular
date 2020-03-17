@@ -1,0 +1,18 @@
+<section class="property-binding">
+
+  <article>
+    <h3>Título</h3>
+    <p>String Renderizada por interpolação: {{ url }}</p>
+    <p>Soma chata: {{ 1 + 1 }}</p>
+    <p>Soma com funcao: {{ 1 + 1 + getValor() }}</p>
+    <p>Soma com Bool ? {{ getValor() && cursoAngular }}</p>
+  </article>
+
+  <article>
+    <h3>Property Binding</h3>
+    <img src="{{urlImage}}">
+    <img [src]="urlImage">
+  </article>
+
+</section>
+

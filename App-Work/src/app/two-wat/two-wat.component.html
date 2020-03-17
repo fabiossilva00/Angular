@@ -1,0 +1,19 @@
+<p>two-wat works!</p>
+<section>
+  <article>
+    <div>
+      <input #valueInput
+        type="search"
+        [value]="nome"
+        (input)="nome = verificaValorString(valueInput.value)"
+      />
+      <p>Digitado {{nome}}</p>
+      <input #valueInputA
+        type="search"
+        [ngModel]="nome"
+        (ngModelChange)="nome = verificaValorString(valueInputA.value)"
+      />
+      <p>Digitado {{nome}}</p>
+    </div>
+  </article>
+</section>
