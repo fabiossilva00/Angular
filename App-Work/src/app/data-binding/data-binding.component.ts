@@ -9,6 +9,9 @@ export class DataBindingComponent implements OnInit {
   url: string = 'www.google.com'
   cursoAngular: boolean = true
   urlImage: string = "https://i.picsum.photos/id/1010/200/200.jpg"
+  nomeCurso: string = "Angular"
+  valorInicial: number = 1
+  valorMudado: string
 
   constructor() { }
 
@@ -25,6 +28,10 @@ export class DataBindingComponent implements OnInit {
 
   inputando(value: string): void {
     console.log(value)
+  }
+
+  mudandoValor(event: any): void {
+    console.log(event)
   }
 
 }

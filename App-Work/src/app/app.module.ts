@@ -14,6 +14,9 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
 import { ClassStyleComponent } from './class-style/class-style.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { TwoWatComponent } from './two-wat/two-wat.component';
+import { InputPropertiesComponent } from './input-properties/input-properties.component';
+import { OutputPropertyComponent } from './output-property/output-property.component';
+import { CicloVidaComponent } from './ciclo-vida/ciclo-vida.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +25,9 @@ import { TwoWatComponent } from './two-wat/two-wat.component';
     ClassStyleComponent,
     EventBindingComponent,
     TwoWatComponent,
+    InputPropertiesComponent,
+    OutputPropertyComponent,
+    CicloVidaComponent,
   ],
   imports: [
     BrowserModule,

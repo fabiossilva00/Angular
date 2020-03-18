@@ -1,17 +1,25 @@
 <section class="property-binding">
 
   <article>
-    <h3>Título</h3>
-    <p>String Renderizada por interpolação: {{ url }}</p>
+    <!-- <h3>Título</h3> -->
+    <!-- <p>String Renderizada por interpolação: {{ url }}</p>
     <p>Soma chata: {{ 1 + 1 }}</p>
     <p>Soma com funcao: {{ 1 + 1 + getValor() }}</p>
-    <p>Soma com Bool ? {{ getValor() && cursoAngular }}</p>
+    <p>Soma com Bool ? {{ getValor() && cursoAngular }}</p> -->
   </article>
 
-  <article>
+  <!-- <article>
     <h3>Property Binding</h3>
     <img src="{{urlImage}}">
     <img [src]="urlImage">
+  </article> -->
+
+  <article>
+    <h3>Input/Output Properties</h3>
+    <app-curso [nomeDoCurso]="nomeCurso"></app-curso>
+    <contador [contadorValor]="valorInicial"
+      (mudouValor)="mudandoValor($event)"
+    ></contador>
   </article>
 
 </section>

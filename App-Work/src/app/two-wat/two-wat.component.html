@@ -13,6 +13,9 @@
         [ngModel]="nome"
         (ngModelChange)="nome = verificaValorString(valueInputA.value)"
       />
+      <input
+        [(ngModel)]="nome"
+      />
       <p>Digitado {{nome}}</p>
     </div>
   </article>
