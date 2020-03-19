@@ -1,0 +1,33 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span>Menu</span>
+  </mat-toolbar-row>
+</mat-toolbar>
+<mat-tab-group>
+  <mat-tab label="Direct Custom">
+    <app-d-customizadas></app-d-customizadas>
+  </mat-tab>
+  <mat-tab label="'ngContent'">
+    <app-d-ng-content>
+      <div class="header" >Titulo</div>
+      <div class="content">
+        <app-operador-elvis></app-operador-elvis>
+      </div>
+    </app-d-ng-content>
+  </mat-tab>
+  <mat-tab label="'elvis'">
+    <app-operador-elvis></app-operador-elvis>
+  </mat-tab>
+  <mat-tab label="'*ngStyle'">
+    <app-d-ng-style></app-d-ng-style>
+  </mat-tab>
+  <mat-tab label="'*ngClass'">
+    <app-d-ng-class></app-d-ng-class>
+  </mat-tab>
+  <mat-tab label="'*ngSwitch'">
+    <app-d-ng-switch></app-d-ng-switch>
+  </mat-tab>
+  <mat-tab label="'*ngIf'">
+    <app-d-ng-if></app-d-ng-if>
+  </mat-tab>
+</mat-tab-group>

@@ -1,0 +1,31 @@
+<p>d-ng-if works!</p>
+
+<div [hidden]="cursos.length != 0">
+  Lista de Cursos Alternativos
+  <ul *ngFor="let curso of cursos">
+    <li>{{curso.name}}</li>
+  </ul>
+</div>
+<div [hidden]="cursos.length == 0">
+  Não existem valores a serem mostrados
+</div>
+
+  <br><br>
+
+<div>
+  <button mat-raised-button (click)="removeItens()">Remover Cursos</button>
+  <button mat-raised-button (click)="addItens()">Incluir Cursos</button>
+</div>
+
+  <br><br>
+
+<div *ngIf="cursos.length != 0">
+  Lista de Cursos
+  <ul *ngFor="let curso of cursos">
+    <li>{{curso.name}}</li>
+  </ul>
+</div>
+
+<div *ngIf=" cursos.length == 0">
+  Não existem valores a serem mostrados
+</div>

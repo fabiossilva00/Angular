@@ -1,0 +1,25 @@
+<p>d-ng-switch works!</p>
+<mat-button-toggle-group
+  #group="matButtonToggleGroup"
+  (change)="aboutChange($event.value)"
+>
+  <mat-button-toggle value="home">
+    Home
+  </mat-button-toggle>
+  <mat-button-toggle value="features">
+    Features
+  </mat-button-toggle>
+  <mat-button-toggle value="pricing">
+    Pricing
+  </mat-button-toggle>
+  <mat-button-toggle value="about">
+    About
+  </mat-button-toggle>
+</mat-button-toggle-group>
+<div [ngSwitch]="changeToogle">
+  <p *ngSwitchCase="'home'">"Home"</p>
+  <p *ngSwitchCase="'features'">"Features"</p>
+  <p *ngSwitchCase="'pricing'">{{changeToogle}}</p>
+  <p *ngSwitchCase="'about'">About</p>
+  <p *ngSwitchDefault>{{changeToogle}}</p>
+</div>

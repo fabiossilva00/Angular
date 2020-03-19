@@ -1,0 +1,22 @@
+<p fundoAmarelo
+>Texto com funfo amarelo</p>
+<button fundoAmarelo
+>Butao com diretiva</button>
+<br>
+<p highlightMouse>
+  Texto com highlight quanto passo o mouse.
+</p>
+<p [highlight]="'red'" [defaultColor]="'grey'" >
+  Texto com highlight com cores customizadas.
+</p>
+
+<div *ngElse="mostrarCurso">
+  Lista de cursos
+</div>
+<div *ngElse="!mostrarCurso">
+  Não lista cursos
+</div>
+<br>
+<button (click)="onMostrarCursos()">
+  Change Cursos
+</button>

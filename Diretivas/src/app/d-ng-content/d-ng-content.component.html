@@ -1,0 +1,13 @@
+<mat-toolbar color="white">
+  <p>Titulo</p>
+</mat-toolbar>
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>
+      <ng-content select=".header"></ng-content>
+    </mat-card-title>
+    <mat-card-content>
+      <ng-content select=".content"></ng-content>
+    </mat-card-content>
+  </mat-card-header>
+</mat-card>
